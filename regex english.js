@@ -161,7 +161,7 @@ async function onPlayerStateChange2(event) {
         while (true) {
             console.log(Math.round(player2.getCurrentTime()));
             console.log(Math.round(player2.getDuration()));
-            if (Math.round(player2.getCurrentTime()) === Math.round(player2.getDuration())) {
+            if (player2.getCurrentTime() ===player2.getDuration()) {
 
                 carousel.carousel('next')
                 break;
