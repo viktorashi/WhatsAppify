@@ -1,0 +1,60 @@
+    .invisible {
+        display: none;
+    }
+    
+    .invisible>* {
+        display: none;
+    }
+    
+    #message {
+        color: green;
+        border: 80%;
+    }
+    
+    #error h1 {
+        color: #ff0000;
+    }
+    
+    #error,
+    #errorText {
+        color: red !important;
+        border: red;
+    }
+    
+    svg {
+        position: relative;
+    }
+    
+    body {
+        transition: all 1s;
+    }
+    /* 
+#copyInput {
+  display: none;
+} */
+    
+    textarea {
+        width: 100%;
+    }
+    /* @media (max-width: 767px) {
+        .top-content .carousel-control-prev,
+        .top-content .carousel-control-next {
+            display: none;
+        }
+        .top-content .carousel-indicators li {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    } */
+    
+    #input {
+        border-radius: 3%;
+    }
+    
+    #input:active {
+        border: none;
+    }
+    
+    .carousel-item * {
+        width: 50%;
+    }
