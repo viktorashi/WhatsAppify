@@ -129,12 +129,11 @@ async function onPlayerReady3(event) {
 //    the player should play for six seconds and then stop.
 
 async function onPlayerStateChange1(event) {
-    console.log(`S-a schimbatt 1`)
+   
     if (event.data === YT.PlayerState.PLAYING) {
-        console.log(`E playat mai exact!`)
+       
         while (true) {
-            console.log(Math.round(player1.getCurrentTime()));
-            console.log(Math.round(player1.getDuration()));
+            
             if (player1.getCurrentTime() === player1.getDuration()) {
 
                 carousel.carousel('next')
@@ -155,12 +154,11 @@ async function onPlayerStateChange1(event) {
 
 
 async function onPlayerStateChange2(event) {
-    console.log(`S-a schimbatt 2`)
+  
     if (event.data === YT.PlayerState.PLAYING) {
-        console.log(`E playat mai exact!`)
+       
         while (true) {
-            console.log(Math.round(player2.getCurrentTime()));
-            console.log(Math.round(player2.getDuration()));
+      
             if (player2.getCurrentTime() ===player2.getDuration()) {
 
                 carousel.carousel('next')
@@ -173,12 +171,11 @@ async function onPlayerStateChange2(event) {
 }
 
 async function onPlayerStateChange3(event) {
-    console.log(`S-a schimbatt 3`)
+  
     if (event.data === YT.PlayerState.PLAYING) {
-        console.log(`E playat mai exact!`)
+     
         while (true) {
-            console.log(Math.round(player3.getCurrentTime()));
-            console.log(Math.round(player3.getDuration()));
+         
             if (player3.getCurrentTime() === player3.getDuration()) {
 
                 carousel.carousel('next')
@@ -221,7 +218,7 @@ carousel.on('slide.bs.carousel', (evt) => {
 
             break;
     }
-    console.log(count)
+   
 
 
     // src = src + `&autoplay=1`
@@ -272,7 +269,7 @@ nameOption.addEventListener('change', async event => {
     // ) {
     //   document.querySelector('#error').classList.add('invisible')
     // }
-    console.log(event)
+   
     if (mesaje.length !== 0) {
         try {
             if (nameOption.value === 'noName') {
@@ -308,7 +305,7 @@ input.addEventListener('input', async e => {
         // ) {
         //   document.querySelector('#error').classList.add('invisible')
         // }
-    console.log(e)
+ 
     try {
         if (nameOption.value === 'noName') {
 
@@ -329,7 +326,7 @@ input.addEventListener('input', async e => {
 form.addEventListener('submit', e => {
     e.preventDefault()
     const input = form.elements.input
-    console.log(e)
+  
     if (nameOption.value === 'noName') {
         removeFormatting(input.value, regexNoNames)
     } else if (nameOption.value === 'name') {
