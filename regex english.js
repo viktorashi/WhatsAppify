@@ -242,10 +242,15 @@ async function removeFormatting(input, regex) {
         if (regex.test(input)) {
             document.querySelector('#error').classList.add('invisible')
             mesaje = input.replaceAll(regex, '')
+
             const clean = mesaje.replaceAll('\n', '<br>')
+            mesaje = mesaje.replaceAll('\n ', '\n')
+            mesaje = mesaje.replace(' ', '')
                 // const clean = mesaje.map(msg => (regex.test(msg) ? '' : msg))
                 // let touchedInput = input.replaceAll(regex, '');
             paragraph.innerHTML = clean
+            console.log(clean)
+            console.log(mesaje)
             input = ''
             return mesaje
         } else {
