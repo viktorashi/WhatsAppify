@@ -249,8 +249,7 @@ async function removeFormatting(input, regex) {
                 // const clean = mesaje.map(msg => (regex.test(msg) ? '' : msg))
                 // let touchedInput = input.replaceAll(regex, '');
             paragraph.innerHTML = clean
-            console.log(clean)
-            console.log(mesaje)
+          
             input = ''
             return mesaje
         } else {
