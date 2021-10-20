@@ -13,9 +13,9 @@ const sleep = (delay) => {
 // pe wapp cand dai copypaste ca sa fie mai usor mai rapid un pic
 
 // let re1 = /ab+c/;
-const regexNoNames = /\[\d{2}:\d{2},\s[1-9]{1,2}\/[1-9]{1,2}\/\d{4,10}\]\s.*?:|\[\d{1,2}\/\d{1,2},\s\d{1,2}:\d{1,2}\]\s.*?:/gi;
+const regexNoNames = /\[\d{2}:\d{2},\s[0-9]{1,2}\/[0-9]{1,2}\/\d{4,10}\]\s.*?:|\[\d{1,2}\/\d{1,2},\s\d{1,2}:\d{1,2}\]\s.*?:/gi;
 
-const regexNames = /\[\d{2}:\d{2},\s[1-9]{1,2}\/[1-9]{1,2}\/\d{4,10}\]\s|\[\d{1,2}\/\d{1,2},\s\d{1,2}:\d{1,2}\]\s/gi;
+const regexNames = /\[\d{2}:\d{2},\s[0-9]{1,2}\/[0-9]{1,2}\/\d{4,10}\]\s|\[\d{1,2}\/\d{1,2},\s\d{1,2}:\d{1,2}\]\s/gi;
 
 
 const form = document.querySelector('#form')
